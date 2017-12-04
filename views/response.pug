@@ -1,0 +1,86 @@
+doctype html
+html
+	head
+		link(rel="stylesheet", type="text/css", href="style.css")
+		meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
+		title IFPWAFCAD - #{subject}
+	body
+		table(border="0")
+			thead
+				tr
+					th(colspan="2") #{subject}
+			tbody
+				tr
+					td
+						strong Description: 
+					td
+						span(style="font-size:smaller; font-style:italic;") #{desc}
+				tr
+					tdd
+						strong Counselor: 
+					td
+						| #{counselor}
+						br
+						span(style="font-size:smaller; font-style:italic;")
+							| member since: #{since}
+				tr
+					td
+						strong Contact Details: 
+					td
+						strong email: 
+						a(href="mailto:#{email}") #{email}
+						br
+						strong phone: 
+						| #{phone}
+
+
+				tr
+					th(colspan="2") (enquire)
+				tbody
+					tr 
+						td
+							strong id:
+						td
+							span(style="font-size; font-style:italic;") #{desc}
+					tr
+						td
+							strong Counselor_id:
+						td
+							#{counselor_id}
+							br
+							span(style="font-size:smaller; font-style:italics;")
+							| counselor_id: #{since}
+					tr
+						td
+							strong message:
+						td
+							span(style="font-size:smaller; font-style:italics;") #{desc}
+					
+							br
+							span(style="font-size:smaller; font-style:italics;") #{desc}
+							| message : # {since}
+
+
+				tr
+					th(colspan="2") (Replies)
+				tbody
+					tr
+
+						td
+							strong id:
+						td
+							span(style="font-size: smaller; font-style:italics;") #{desc}
+					tr
+						td
+							strong Counselor_id:
+						td
+							span(style="font-size:small; font-style:italics;") #{desc}
+					tr
+						td 
+							strong reply:
+						td
+							span(style="font-size: smaller; font-style:italics;") #{desc}
+							br
+							span(style="font-size:smaller; font-style:italics;") #{desc}
+							| reply : # {since}
+

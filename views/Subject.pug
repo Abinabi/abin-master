@@ -1,0 +1,29 @@
+doctype html
+html
+	head
+		link(rel="stylesheet", type="text/css", href="images2.css")
+	body
+	form(method="post")
+		div
+			h1 Insert Data, Update Data IN Subject Table 
+			<h1 style = "color:#f1f1f1";> 
+			input#id(type="hidden")
+			b Subject_id:
+			input#Subject_id(type="number", name="id")
+			br
+			b name:
+			input(type="text", name="name")
+			br
+			b descrption:
+			input(type="text", name="descrption")
+			br
+			b Counselor_id:
+			input(type="number", name="Counselor_id")
+			br
+			br
+			button(onclick="InsertData()", formaction="/insertSubject") Insert Data
+			button(onclick="UpdateData()", formaction="/updateSubject") Update Data
+			br
+			br
+			br
+			#details

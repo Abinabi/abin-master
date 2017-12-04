@@ -1,0 +1,39 @@
+doctype html
+html
+	head
+
+		link(rel="stylesheet", type="text/css", href="images2.css")
+	body
+	form(method="post")
+		div
+			h1 Insert Data, Update Data In Counselor Table
+			<h1 style = "color:#f1f1f1";> 
+			input#id(type="hidden") 
+			b Counselor_id:
+			input#Counselor_id(type="number", name="counselor_id")
+			br
+			b first_name:
+			input#first_name(type="text", name="first_name")
+			br
+			b nick_name:
+			input#nick_name(type="text", name="nick_name")
+			br
+			b last_name:
+			input#last_name(type="text", name="last_name")
+			br
+			b telephone:
+			input(type="int", name="telephone")
+			br
+			b email:
+			input#email(type="text", name="email")
+			br
+			b member_since:
+			input(type="date", name="member_since")
+			br
+			br
+			button(onclick="InsertData()", formaction="/insertCounselor") Insert Data
+			button(onclick="UpdateData()", formaction="/updateCounselor") Update Data
+			br
+			br
+			br
+			#details

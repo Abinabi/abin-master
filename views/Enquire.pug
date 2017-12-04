@@ -1,0 +1,29 @@
+doctype html
+html
+	head
+		link(rel="stylesheet", type="text/css", href="images2.css")
+	body
+	
+	back
+		form(method="post")
+			h1 Insert Data, Update Data IN Enquire Table
+			<h1 style = "color:#f1f1f1";> 
+			input#id(type="hidden")
+			
+			b id:
+			input(type="number", name="id")
+			br
+			b Counselor_id:
+			input(type="number", name="counselor_id")
+			br
+			b message:
+			input(type="text", name="message")
+			br
+			br
+			input(type="submit", formaction="/insertEnquire", value="Insert Data")
+			input(type="submit", formaction="/updateEnquire", value="Update Data")
+			br
+			br
+			br
+			#details
+	

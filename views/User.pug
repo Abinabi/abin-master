@@ -1,0 +1,29 @@
+doctype html
+html
+	head
+	link(rel="stylesheet", type="text/css", href="images2.css")
+	body
+	form(method="post")
+		div
+			h1 Insert Data, Update Data In User Table
+			<h1 style = "color:#f1f1f1";> 
+			input#id(type="hidden")
+			b user_id:
+			input(type="number", name="user_id")
+			br
+			b user_name:
+			input(type="text", name="user_name")
+			br
+			b password:
+			input(type="text", name="password")
+			br
+			b salt:
+			input(type="text", name="salt")
+			br
+			br
+			button(onclick="InsertData()",formaction="/insertUser") Insert Data
+			button(onclick="UpdateData()",formaction="/updateUser") Update Data
+			br
+			br
+			br
+			#details

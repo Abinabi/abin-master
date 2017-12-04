@@ -1,0 +1,27 @@
+doctype html
+html
+   head
+      link(rel="stylesheet", type="text/css", href="images2.css")
+   body 
+    form(method="post")
+
+        div
+           h1 Insert Data, Update Data IN Replies Table
+           <h1 style = "color:#f1f1f1";> 
+           input#id(type="hidden") 
+           b id:
+           input(type="number", name="id")
+           br
+           b Counselor_id:
+           input(type="number", name="Counselor_id")
+           br
+           b reply:
+           input(type="text", name="reply")
+           br
+           br
+           button(onclick="InsertData()", formaction="/insertReply") Insert Data
+           button(onclick="UpdateData()", formaction="/updateReply") Update Data
+           br
+           br
+           br
+           #details
